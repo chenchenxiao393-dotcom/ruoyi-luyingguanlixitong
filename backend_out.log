@@ -1,0 +1,28 @@
+Application Version: 3.9.2
+Spring Boot Version: 4.0.3
+////////////////////////////////////////////////////////////////////
+//                          _ooOoo_                               //
+//                         o8888888o                              //
+//                         88" . "88                              //
+//                         (| ^_^ |)                              //
+//                         O\  =  /O                              //
+//                      ____/`---'\____                           //
+//                    .'  \\|     |//  `.                         //
+//                   /  \\|||  :  |||//  \                        //
+//                  /  _||||| -:- |||||-  \                       //
+//                  |   | \\\  -  /// |   |                       //
+//                  | \_|  ''\---/''  |   |                       //
+//                  \  .-\__  `-`  ___/-. /                       //
+//                ___`. .'  /--.--\  `. . ___                     //
+//              ."" '<  `.___\_<|>_/___.'  >'"".                  //
+//            | | :  `- \`.;`\ _ /`;.`/ - ` : | |                 //
+//            \  \ `-.   \_ __\ /__ _/   .-` /  /                 //
+//      ========`-.____`-.___\_____/___.-`____.-'========         //
+//                           `=---='                              //
+//      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        //
+//             佛祖保佑       永不宕机      永无BUG               //
+////////////////////////////////////////////////////////////////////
+15:17:32.200 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,18] - HV000001: Hibernate Validator 9.0.1.Final
+15:17:32.255 [main] INFO  c.r.RuoYiApplication - [logStarting,54] - Starting RuoYiApplication using Java 17.0.12 with PID 7276 (E:\VS code项目\RuoYi-Vue-master\ruoyi-admin\target\ruoyi-admin.jar started by chen in E:\VS code项目\RuoYi-Vue-master)
+15:17:32.256 [main] DEBUG c.r.RuoYiApplication - [logStarting,55] - Running with Spring Boot v4.0.3, Spring v7.0.5
+15:17:32.256 [main] INFO  c.r.RuoYiApplication - [logStartupProfileInfo,658] - The following 1 profile is active: "druid"

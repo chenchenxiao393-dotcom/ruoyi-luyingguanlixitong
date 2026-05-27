@@ -1,0 +1,77 @@
+
+> ruoyi@3.9.2 dev
+> vue-cli-service serve
+
+ INFO  Starting development server...
+ DONE  Compiled successfully in 8732ms13:57:12
+
+
+  App running at:
+  - Local:   http://localhost:81/ 
+  - Network: http://192.168.191.172:81/
+
+  Note that the development build is not optimized.
+  To create a production build, run npm run build.
+
+ WAIT  Compiling...14:01:10
+
+ DONE  Compiled successfully in 1257ms14:01:12
+
+
+  App running at:
+  - Local:   http://localhost:81/ 
+  - Network: http://192.168.191.172:81/
+
+ ERROR  Failed to compile with 1 error14:02:37
+
+ error  in ./src/views/system/order/orderManage.vue
+
+Syntax Error: Error: ENOENT: no such file or directory, open 'E:\VS code项目\RuoYi-Vue-master(露营管理系统)\RuoYi-Vue-master\ruoyi-ui\src\views\system\order\orderManage.vue'
+
+
+ @ ./src/router/index.js 189:53-96
+ @ ./src/main.js
+ @ multi (webpack)-dev-server/client?http://192.168.191.172:81&sockPath=/sockjs-node (webpack)/hot/dev-server.js ./src/main.js
+
+ WAIT  Compiling...14:02:37
+
+ ERROR  Failed to compile with 2 errors14:02:38
+
+ error  in ./src/views/system/order/orderManage.vue
+
+Syntax Error: Error: ENOENT: no such file or directory, open 'E:\VS code项目\RuoYi-Vue-master(露营管理系统)\RuoYi-Vue-master\ruoyi-ui\src\views\system\order\orderManage.vue'
+
+
+ @ ./src/router/index.js 189:53-96
+ @ ./src/main.js
+ @ multi (webpack)-dev-server/client?http://192.168.191.172:81&sockPath=/sockjs-node (webpack)/hot/dev-server.js ./src/main.js
+
+ error  in ./src/views/system/refund/refundManage.vue
+
+Syntax Error: Error: ENOENT: no such file or directory, open 'E:\VS code项目\RuoYi-Vue-master(露营管理系统)\RuoYi-Vue-master\ruoyi-ui\src\views\system\refund\refundManage.vue'
+
+
+ @ ./src/router/index.js 212:53-98
+ @ ./src/main.js
+ @ multi (webpack)-dev-server/client?http://192.168.191.172:81&sockPath=/sockjs-node (webpack)/hot/dev-server.js ./src/main.js
+
+ WAIT  Compiling...14:02:54
+
+ WARNING  Compiled with 1 warning14:02:55
+
+ warning  in ./src/views/system/refund/refundManage.vue
+
+Syntax Error: Error: ENOENT: no such file or directory, open 'E:\VS code项目\RuoYi-Vue-master(露营管理系统)\RuoYi-Vue-master\ruoyi-ui\src\views\system\refund\refundManage.vue'
+
+
+ @ ./src/views sync ^\.\/.*$
+ @ ./src/store/modules/permission.js
+ @ ./src/store/index.js
+ @ ./src/main.js
+ @ multi (webpack)-dev-server/client?http://192.168.191.172:81&sockPath=/sockjs-node (webpack)/hot/dev-server.js ./src/main.js
+
+
+  App running at:
+  - Local:   http://localhost:81/ 
+  - Network: http://192.168.191.172:81/
+

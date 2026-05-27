@@ -1,0 +1,1065 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.ruoyi:ruoyi-admin >------------------------
+[INFO] Building ruoyi-admin 3.9.2
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:4.0.3:run (default-cli) > test-compile @ ruoyi-admin >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ ruoyi-admin ---
+[INFO] Copying 7 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ ruoyi-admin ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ ruoyi-admin ---
+[INFO] skip non existing resourceDirectory E:\VS code项目\RuoYi-Vue-master\ruoyi-admin\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ ruoyi-admin ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< spring-boot:4.0.3:run (default-cli) < test-compile @ ruoyi-admin <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:4.0.3:run (default-cli) @ ruoyi-admin ---
+[INFO] Attaching agents: []
+Application Version: 3.9.2
+Spring Boot Version: 4.0.3
+////////////////////////////////////////////////////////////////////
+//                          _ooOoo_                               //
+//                         o8888888o                              //
+//                         88" . "88                              //
+//                         (| ^_^ |)                              //
+//                         O\  =  /O                              //
+//                      ____/`---'\____                           //
+//                    .'  \\|     |//  `.                         //
+//                   /  \\|||  :  |||//  \                        //
+//                  /  _||||| -:- |||||-  \                       //
+//                  |   | \\\  -  /// |   |                       //
+//                  | \_|  ''\---/''  |   |                       //
+//                  \  .-\__  `-`  ___/-. /                       //
+//                ___`. .'  /--.--\  `. . ___                     //
+//              ."" '<  `.___\_<|>_/___.'  >'"".                  //
+//            | | :  `- \`.;`\ _ /`;.`/ - ` : | |                 //
+//            \  \ `-.   \_ __\ /__ _/   .-` /  /                 //
+//      ========`-.____`-.___\_____/___.-`____.-'========         //
+//                           `=---='                              //
+//      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        //
+//             佛祖保佑       永不宕机      永无BUG               //
+////////////////////////////////////////////////////////////////////
+19:26:41.161 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,18] - HV000001: Hibernate Validator 9.0.1.Final
+19:26:41.208 [restartedMain] INFO  c.r.RuoYiApplication - [logStarting,54] - Starting RuoYiApplication using Java 17.0.12 with PID 18404 (E:\VS code项目\RuoYi-Vue-master\ruoyi-admin\target\classes started by chen in E:\VS code项目\RuoYi-Vue-master\ruoyi-admin)
+19:26:41.209 [restartedMain] DEBUG c.r.RuoYiApplication - [logStarting,55] - Running with Spring Boot v4.0.3, Spring v7.0.5
+19:26:41.210 [restartedMain] INFO  c.r.RuoYiApplication - [logStartupProfileInfo,658] - The following 1 profile is active: "druid"
+19:26:42.755 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,168] - Initializing ProtocolHandler ["http-nio-8080"]
+19:26:42.757 [restartedMain] INFO  o.a.c.c.StandardService - [log,168] - Starting service [Tomcat]
+19:26:42.757 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,168] - Starting Servlet engine: [Apache Tomcat/11.0.18]
+19:26:43.118 [restartedMain] DEBUG c.r.f.s.f.JwtAuthenticationTokenFilter - [init,236] - Filter 'jwtAuthenticationTokenFilter' configured for use
+19:26:43.490 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,865] - {dataSource-1} inited
+19:26:43.924 [restartedMain] DEBUG c.r.s.m.S.selectConfigList - [debug,135] - ==>  Preparing: select config_id, config_name, config_key, config_value, config_type, create_by, create_time, update_by, update_time, remark from sys_config
+19:26:44.027 [restartedMain] DEBUG c.r.s.m.S.selectConfigList - [debug,135] - ==> Parameters: 
+19:26:44.040 [restartedMain] DEBUG c.r.s.m.S.selectConfigList - [debug,135] - <==      Total: 9
+19:26:44.543 [restartedMain] DEBUG c.r.s.m.S.selectDictDataList - [debug,135] - ==>  Preparing: select dict_code, dict_sort, dict_label, dict_value, dict_type, css_class, list_class, is_default, status, create_by, create_time, remark from sys_dict_data WHERE status = ? order by dict_sort asc
+19:26:44.548 [restartedMain] DEBUG c.r.s.m.S.selectDictDataList - [debug,135] - ==> Parameters: 0(String)
+19:26:44.557 [restartedMain] DEBUG c.r.s.m.S.selectDictDataList - [debug,135] - <==      Total: 29
+19:26:45.072 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,62] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+19:26:45.073 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,224] - Quartz Scheduler v2.5.2 created.
+19:26:45.073 [restartedMain] INFO  o.q.s.RAMJobStore - [initialize,152] - RAMJobStore initialized.
+19:26:45.074 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,289] - Scheduler meta-data: Quartz Scheduler (v2.5.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+19:26:45.074 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2250] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@2bd4a9e
+19:26:45.096 [restartedMain] DEBUG c.r.q.m.S.selectJobAll - [debug,135] - ==>  Preparing: select job_id, job_name, job_group, invoke_target, cron_expression, misfire_policy, concurrent, status, create_by, create_time, update_by, update_time, remark from sys_job
+19:26:45.096 [restartedMain] DEBUG c.r.q.m.S.selectJobAll - [debug,135] - ==> Parameters: 
+19:26:45.098 [restartedMain] DEBUG c.r.q.m.S.selectJobAll - [debug,135] - <==      Total: 3
+19:26:45.777 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,168] - Starting ProtocolHandler ["http-nio-8080"]
+19:26:45.786 [restartedMain] INFO  o.q.c.QuartzScheduler - [start,541] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+19:26:45.791 [restartedMain] INFO  c.r.RuoYiApplication - [logStarted,60] - Started RuoYiApplication in 4.883 seconds (process running for 5.357)
+19:26:45.793 [restartedMain] WARN  o.s.c.e.SpringDocAppInitializer - [init,83] - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+(????)??  若依启动成功   ?(??`?)?  
+ .-------.       ____     __        
+ |  _ _   \      \   \   /  /    
+ | ( ' )  |       \  _. /  '       
+ |(_ o _) /        _( )_ .'         
+ | (_,_).' __  ___(_ o _)'          
+ |  |\ \  |  ||   |(_,_)'         
+ |  | \ `'   /|   `-'  /           
+ |  |  \    /  \      /           
+ ''-'   `'-'    `-..-'              
+19:27:47.152 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,168] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:27:47.293 [http-nio-8080-exec-1] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - ==>  Preparing: select distinct r.role_id, r.role_name, r.role_key, r.role_sort, r.data_scope, r.menu_check_strictly, r.dept_check_strictly, r.status, r.del_flag, r.create_time, r.remark from sys_role r left join sys_user_role ur on ur.role_id = r.role_id left join sys_user u on u.user_id = ur.user_id left join sys_dept d on u.dept_id = d.dept_id WHERE r.del_flag = '0' and ur.user_id = ?
+19:27:47.298 [http-nio-8080-exec-1] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - ==> Parameters: 110(Long)
+19:27:47.302 [http-nio-8080-exec-1] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - <==      Total: 0
+19:27:47.304 [http-nio-8080-exec-1] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - ==>  Preparing: select distinct m.perms from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id left join sys_role r on r.role_id = ur.role_id where m.status = '0' and r.status = '0' and ur.user_id = ?
+19:27:47.306 [http-nio-8080-exec-1] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - ==> Parameters: 110(Long)
+19:27:47.308 [http-nio-8080-exec-1] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - <==      Total: 20
+19:27:47.405 [http-nio-8080-exec-4] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - ==>  Preparing: select distinct m.menu_id, m.parent_id, m.menu_name, m.path, m.component, m.`query`, m.route_name, m.visible, m.status, ifnull(m.perms,'') as perms, m.is_frame, m.is_cache, m.menu_type, m.icon, m.order_num, m.create_time from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id left join sys_role ro on ur.role_id = ro.role_id left join sys_user u on ur.user_id = u.user_id where u.user_id = ? and m.menu_type in ('M', 'C') and m.status = 0 AND ro.status = 0 order by m.parent_id, m.order_num
+19:27:47.407 [http-nio-8080-exec-4] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - ==> Parameters: 110(Long)
+19:27:47.411 [http-nio-8080-exec-4] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - <==      Total: 13
+19:27:47.914 [http-nio-8080-exec-2] DEBUG c.r.s.m.S.selectNoticeListWithReadStatus - [debug,135] - ==>  Preparing: select n.notice_id as noticeId, n.notice_title as noticeTitle, n.notice_type as noticeType, n.status, n.create_by as createBy, n.create_time as createTime, case when r.notice_id is not null then true else false end as isRead from sys_notice n left join sys_notice_read r on r.notice_id = n.notice_id and r.user_id = ? where n.status = '0' order by n.notice_id desc limit ?
+19:27:47.916 [http-nio-8080-exec-2] DEBUG c.r.s.m.S.selectNoticeListWithReadStatus - [debug,135] - ==> Parameters: 110(Long), 5(Integer)
+19:27:47.918 [http-nio-8080-exec-2] DEBUG c.r.s.m.S.selectNoticeListWithReadStatus - [debug,135] - <==      Total: 0
+19:27:48.504 [http-nio-8080-exec-5] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - ==>  Preparing: select distinct r.role_id, r.role_name, r.role_key, r.role_sort, r.data_scope, r.menu_check_strictly, r.dept_check_strictly, r.status, r.del_flag, r.create_time, r.remark from sys_role r left join sys_user_role ur on ur.role_id = r.role_id left join sys_user u on u.user_id = ur.user_id left join sys_dept d on u.dept_id = d.dept_id WHERE r.del_flag = '0' and ur.user_id = ?
+19:27:48.505 [http-nio-8080-exec-5] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - ==> Parameters: 110(Long)
+19:27:48.507 [http-nio-8080-exec-5] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - <==      Total: 0
+19:27:48.507 [http-nio-8080-exec-5] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - ==>  Preparing: select distinct m.perms from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id left join sys_role r on r.role_id = ur.role_id where m.status = '0' and r.status = '0' and ur.user_id = ?
+19:27:48.508 [http-nio-8080-exec-5] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - ==> Parameters: 110(Long)
+19:27:48.509 [http-nio-8080-exec-5] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - <==      Total: 20
+19:27:48.583 [http-nio-8080-exec-6] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - ==>  Preparing: select distinct m.menu_id, m.parent_id, m.menu_name, m.path, m.component, m.`query`, m.route_name, m.visible, m.status, ifnull(m.perms,'') as perms, m.is_frame, m.is_cache, m.menu_type, m.icon, m.order_num, m.create_time from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id left join sys_role ro on ur.role_id = ro.role_id left join sys_user u on ur.user_id = u.user_id where u.user_id = ? and m.menu_type in ('M', 'C') and m.status = 0 AND ro.status = 0 order by m.parent_id, m.order_num
+19:27:48.584 [http-nio-8080-exec-6] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - ==> Parameters: 110(Long)
+19:27:48.588 [http-nio-8080-exec-6] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - <==      Total: 13
+19:27:48.645 [http-nio-8080-exec-7] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - ==>  Preparing: select distinct r.role_id, r.role_name, r.role_key, r.role_sort, r.data_scope, r.menu_check_strictly, r.dept_check_strictly, r.status, r.del_flag, r.create_time, r.remark from sys_role r left join sys_user_role ur on ur.role_id = r.role_id left join sys_user u on u.user_id = ur.user_id left join sys_dept d on u.dept_id = d.dept_id WHERE r.del_flag = '0' and ur.user_id = ?
+19:27:48.646 [http-nio-8080-exec-7] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - ==> Parameters: 110(Long)
+19:27:48.647 [http-nio-8080-exec-7] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - <==      Total: 0
+19:27:48.647 [http-nio-8080-exec-7] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - ==>  Preparing: select distinct m.perms from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id left join sys_role r on r.role_id = ur.role_id where m.status = '0' and r.status = '0' and ur.user_id = ?
+19:27:48.648 [http-nio-8080-exec-7] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - ==> Parameters: 110(Long)
+19:27:48.649 [http-nio-8080-exec-7] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - <==      Total: 20
+19:27:48.704 [http-nio-8080-exec-9] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - ==>  Preparing: select distinct m.menu_id, m.parent_id, m.menu_name, m.path, m.component, m.`query`, m.route_name, m.visible, m.status, ifnull(m.perms,'') as perms, m.is_frame, m.is_cache, m.menu_type, m.icon, m.order_num, m.create_time from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id left join sys_role ro on ur.role_id = ro.role_id left join sys_user u on ur.user_id = u.user_id where u.user_id = ? and m.menu_type in ('M', 'C') and m.status = 0 AND ro.status = 0 order by m.parent_id, m.order_num
+19:27:48.705 [http-nio-8080-exec-9] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - ==> Parameters: 110(Long)
+19:27:48.709 [http-nio-8080-exec-9] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - <==      Total: 13
+19:27:51.408 [schedule-pool-1] INFO  sys-user - [run,55] - [127.0.0.1]内网IP[用户3][Logout][退出成功]
+19:27:51.445 [schedule-pool-1] INFO  n.b.p.u.u.YauaaVersion - [logVersion,104] - Yauaa 8.1.0 (v8.1.0 @ 2026-02-16T08:31:38Z)
+19:27:51.548 [schedule-pool-1] INFO  n.b.p.u.c.ConfigLoader - [loadResources,309] - - Loaded 122 files in   96 ms using expression: classpath*:UserAgents/**/*.yaml
+19:27:52.608 [schedule-pool-1] INFO  n.b.p.u.a.UserAgentStringMatchMaker - [finalizeLoadingRules,282] - Building all needed matchers for the requested 11 fields.
+19:27:52.638 [schedule-pool-1] INFO  n.b.p.u.a.UserAgentStringMatchMaker - [initializeMatchers,336] - Initializing Analyzer data structures
+19:27:53.124 [schedule-pool-1] INFO  n.b.p.u.a.UserAgentStringMatchMaker - [initializeMatchers,347] - Built in 485 msec : Hashmap 199731, Ranges map:3004
+19:27:53.162 [schedule-pool-1] DEBUG c.r.s.m.S.insertLogininfor - [debug,135] - ==>  Preparing: insert into sys_logininfor (user_name, status, ipaddr, login_location, browser, os, msg, login_time) values (?, ?, ?, ?, ?, ?, ?, sysdate())
+19:27:53.248 [schedule-pool-1] DEBUG c.r.s.m.S.insertLogininfor - [debug,135] - ==> Parameters: 用户3(String), 0(String), 127.0.0.1(String), 内网IP(String), Edge 140(String), Windows >=10(String), 退出成功(String)
+19:27:53.252 [schedule-pool-1] DEBUG c.r.s.m.S.insertLogininfor - [debug,135] - <==    Updates: 1
+19:28:11.219 [http-nio-8080-exec-13] DEBUG c.r.s.m.S.checkUserNameUnique - [debug,135] - ==>  Preparing: select user_id, user_name from sys_user where user_name = ? and del_flag = '0' limit 1
+19:28:11.219 [http-nio-8080-exec-13] DEBUG c.r.s.m.S.checkUserNameUnique - [debug,135] - ==> Parameters: 用户4(String)
+19:28:11.221 [http-nio-8080-exec-13] DEBUG c.r.s.m.S.checkUserNameUnique - [debug,135] - <==      Total: 0
+19:28:11.290 [http-nio-8080-exec-13] DEBUG c.r.s.m.S.insertUser - [debug,135] - ==>  Preparing: insert into sys_user( user_name, nick_name, password, pwd_update_date, create_time )values( ?, ?, ?, ?, sysdate() )
+19:28:11.291 [http-nio-8080-exec-13] DEBUG c.r.s.m.S.insertUser - [debug,135] - ==> Parameters: 用户4(String), 用户4(String), $2a$10$UtoaH4mkADRtGrtChxkCJuWwLml1Ahqs.6bT9yIa3resu4SLeZICS(String), 2026-05-26 19:28:11.223(Timestamp)
+19:28:11.297 [http-nio-8080-exec-13] DEBUG c.r.s.m.S.insertUser - [debug,135] - <==    Updates: 1
+19:28:11.309 [schedule-pool-1] INFO  sys-user - [run,55] - [127.0.0.1]内网IP[用户4][Register][注册成功]
+19:28:11.310 [schedule-pool-1] DEBUG c.r.s.m.S.insertLogininfor - [debug,135] - ==>  Preparing: insert into sys_logininfor (user_name, status, ipaddr, login_location, browser, os, msg, login_time) values (?, ?, ?, ?, ?, ?, ?, sysdate())
+19:28:11.311 [schedule-pool-1] DEBUG c.r.s.m.S.insertLogininfor - [debug,135] - ==> Parameters: 用户4(String), 0(String), 127.0.0.1(String), 内网IP(String), Edge 140(String), Windows >=10(String), 注册成功(String)
+19:28:11.313 [schedule-pool-1] DEBUG c.r.s.m.S.insertLogininfor - [debug,135] - <==    Updates: 1
+19:28:25.926 [http-nio-8080-exec-14] DEBUG c.r.s.m.S.selectConfig - [debug,135] - ==>  Preparing: select config_id, config_name, config_key, config_value, config_type, create_by, create_time, update_by, update_time, remark from sys_config WHERE config_key = ?
+19:28:25.928 [http-nio-8080-exec-14] DEBUG c.r.s.m.S.selectConfig - [debug,135] - ==> Parameters: sys.login.blackIPList(String)
+19:28:25.929 [http-nio-8080-exec-14] DEBUG c.r.s.m.S.selectConfig - [debug,135] - <==      Total: 1
+19:28:25.992 [http-nio-8080-exec-14] DEBUG c.r.s.m.S.selectUserByUserName - [debug,135] - ==>  Preparing: select u.user_id, u.dept_id, u.user_name, u.nick_name, u.email, u.avatar, u.phonenumber, u.password, u.sex, u.status, u.del_flag, u.login_ip, u.login_date, u.pwd_update_date, u.birthday, u.signature, u.create_by, u.create_time, u.update_by, u.update_time, u.remark, d.dept_id, d.parent_id, d.ancestors, d.dept_name, d.order_num, d.leader, d.status as dept_status, r.role_id, r.role_name, r.role_key, r.role_sort, r.data_scope, r.status as role_status from sys_user u left join sys_dept d on u.dept_id = d.dept_id left join sys_user_role ur on u.user_id = ur.user_id left join sys_role r on r.role_id = ur.role_id where u.user_name = ? and u.del_flag = '0'
+19:28:25.993 [http-nio-8080-exec-14] DEBUG c.r.s.m.S.selectUserByUserName - [debug,135] - ==> Parameters: 用户4(String)
+19:28:25.995 [http-nio-8080-exec-14] DEBUG c.r.s.m.S.selectUserByUserName - [debug,135] - <==      Total: 1
+19:28:26.056 [http-nio-8080-exec-14] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - ==>  Preparing: select distinct m.perms from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id left join sys_role r on r.role_id = ur.role_id where m.status = '0' and r.status = '0' and ur.user_id = ?
+19:28:26.058 [http-nio-8080-exec-14] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - ==> Parameters: 111(Long)
+19:28:26.059 [http-nio-8080-exec-14] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - <==      Total: 0
+19:28:26.122 [http-nio-8080-exec-14] DEBUG c.r.s.m.S.updateLoginInfo - [debug,135] - ==>  Preparing: update sys_user set login_ip = ?, login_date = ? where user_id = ?
+19:28:26.123 [http-nio-8080-exec-14] DEBUG c.r.s.m.S.updateLoginInfo - [debug,135] - ==> Parameters: 127.0.0.1(String), 2026-05-26 19:28:26.121(Timestamp), 111(Long)
+19:28:26.127 [http-nio-8080-exec-14] DEBUG c.r.s.m.S.updateLoginInfo - [debug,135] - <==    Updates: 1
+19:28:26.138 [schedule-pool-2] INFO  sys-user - [run,55] - [127.0.0.1]内网IP[用户4][Success][登录成功]
+19:28:26.138 [schedule-pool-2] DEBUG c.r.s.m.S.insertLogininfor - [debug,135] - ==>  Preparing: insert into sys_logininfor (user_name, status, ipaddr, login_location, browser, os, msg, login_time) values (?, ?, ?, ?, ?, ?, ?, sysdate())
+19:28:26.138 [schedule-pool-2] DEBUG c.r.s.m.S.insertLogininfor - [debug,135] - ==> Parameters: 用户4(String), 0(String), 127.0.0.1(String), 内网IP(String), Edge 140(String), Windows >=10(String), 登录成功(String)
+19:28:26.141 [schedule-pool-2] DEBUG c.r.s.m.S.insertLogininfor - [debug,135] - <==    Updates: 1
+19:28:26.189 [http-nio-8080-exec-16] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - ==>  Preparing: select distinct r.role_id, r.role_name, r.role_key, r.role_sort, r.data_scope, r.menu_check_strictly, r.dept_check_strictly, r.status, r.del_flag, r.create_time, r.remark from sys_role r left join sys_user_role ur on ur.role_id = r.role_id left join sys_user u on u.user_id = ur.user_id left join sys_dept d on u.dept_id = d.dept_id WHERE r.del_flag = '0' and ur.user_id = ?
+19:28:26.189 [http-nio-8080-exec-16] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - ==> Parameters: 111(Long)
+19:28:26.190 [http-nio-8080-exec-16] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - <==      Total: 0
+19:28:26.191 [http-nio-8080-exec-16] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - ==>  Preparing: select distinct m.perms from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id left join sys_role r on r.role_id = ur.role_id where m.status = '0' and r.status = '0' and ur.user_id = ?
+19:28:26.192 [http-nio-8080-exec-16] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - ==> Parameters: 111(Long)
+19:28:26.192 [http-nio-8080-exec-16] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - <==      Total: 0
+19:28:26.454 [http-nio-8080-exec-18] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - ==>  Preparing: select distinct m.menu_id, m.parent_id, m.menu_name, m.path, m.component, m.`query`, m.route_name, m.visible, m.status, ifnull(m.perms,'') as perms, m.is_frame, m.is_cache, m.menu_type, m.icon, m.order_num, m.create_time from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id left join sys_role ro on ur.role_id = ro.role_id left join sys_user u on ur.user_id = u.user_id where u.user_id = ? and m.menu_type in ('M', 'C') and m.status = 0 AND ro.status = 0 order by m.parent_id, m.order_num
+19:28:26.454 [http-nio-8080-exec-18] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - ==> Parameters: 111(Long)
+19:28:26.456 [http-nio-8080-exec-18] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - <==      Total: 0
+19:28:26.509 [http-nio-8080-exec-19] DEBUG c.r.s.m.S.selectNoticeListWithReadStatus - [debug,135] - ==>  Preparing: select n.notice_id as noticeId, n.notice_title as noticeTitle, n.notice_type as noticeType, n.status, n.create_by as createBy, n.create_time as createTime, case when r.notice_id is not null then true else false end as isRead from sys_notice n left join sys_notice_read r on r.notice_id = n.notice_id and r.user_id = ? where n.status = '0' order by n.notice_id desc limit ?
+19:28:26.510 [http-nio-8080-exec-19] DEBUG c.r.s.m.S.selectNoticeListWithReadStatus - [debug,135] - ==> Parameters: 111(Long), 5(Integer)
+19:28:26.513 [http-nio-8080-exec-19] DEBUG c.r.s.m.S.selectNoticeListWithReadStatus - [debug,135] - <==      Total: 0
+19:28:32.650 [http-nio-8080-exec-8] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - ==>  Preparing: select distinct r.role_id, r.role_name, r.role_key, r.role_sort, r.data_scope, r.menu_check_strictly, r.dept_check_strictly, r.status, r.del_flag, r.create_time, r.remark from sys_role r left join sys_user_role ur on ur.role_id = r.role_id left join sys_user u on u.user_id = ur.user_id left join sys_dept d on u.dept_id = d.dept_id WHERE r.del_flag = '0' and ur.user_id = ?
+19:28:32.651 [http-nio-8080-exec-8] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - ==> Parameters: 111(Long)
+19:28:32.653 [http-nio-8080-exec-8] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - <==      Total: 0
+19:28:32.653 [http-nio-8080-exec-8] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - ==>  Preparing: select distinct m.perms from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id left join sys_role r on r.role_id = ur.role_id where m.status = '0' and r.status = '0' and ur.user_id = ?
+19:28:32.653 [http-nio-8080-exec-8] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - ==> Parameters: 111(Long)
+19:28:32.654 [http-nio-8080-exec-8] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - <==      Total: 0
+19:28:32.691 [http-nio-8080-exec-28] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - ==>  Preparing: select distinct m.menu_id, m.parent_id, m.menu_name, m.path, m.component, m.`query`, m.route_name, m.visible, m.status, ifnull(m.perms,'') as perms, m.is_frame, m.is_cache, m.menu_type, m.icon, m.order_num, m.create_time from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id left join sys_role ro on ur.role_id = ro.role_id left join sys_user u on ur.user_id = u.user_id where u.user_id = ? and m.menu_type in ('M', 'C') and m.status = 0 AND ro.status = 0 order by m.parent_id, m.order_num
+19:28:32.692 [http-nio-8080-exec-28] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - ==> Parameters: 111(Long)
+19:28:32.693 [http-nio-8080-exec-28] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - <==      Total: 0
+19:28:33.082 [http-nio-8080-exec-22] DEBUG c.r.s.m.S.selectNoticeListWithReadStatus - [debug,135] - ==>  Preparing: select n.notice_id as noticeId, n.notice_title as noticeTitle, n.notice_type as noticeType, n.status, n.create_by as createBy, n.create_time as createTime, case when r.notice_id is not null then true else false end as isRead from sys_notice n left join sys_notice_read r on r.notice_id = n.notice_id and r.user_id = ? where n.status = '0' order by n.notice_id desc limit ?
+19:28:33.083 [http-nio-8080-exec-22] DEBUG c.r.s.m.S.selectNoticeListWithReadStatus - [debug,135] - ==> Parameters: 111(Long), 5(Integer)
+19:28:33.084 [http-nio-8080-exec-22] DEBUG c.r.s.m.S.selectNoticeListWithReadStatus - [debug,135] - <==      Total: 0
+19:28:33.551 [http-nio-8080-exec-20] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - ==>  Preparing: select distinct r.role_id, r.role_name, r.role_key, r.role_sort, r.data_scope, r.menu_check_strictly, r.dept_check_strictly, r.status, r.del_flag, r.create_time, r.remark from sys_role r left join sys_user_role ur on ur.role_id = r.role_id left join sys_user u on u.user_id = ur.user_id left join sys_dept d on u.dept_id = d.dept_id WHERE r.del_flag = '0' and ur.user_id = ?
+19:28:33.552 [http-nio-8080-exec-20] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - ==> Parameters: 111(Long)
+19:28:33.554 [http-nio-8080-exec-20] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - <==      Total: 0
+19:28:33.554 [http-nio-8080-exec-20] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - ==>  Preparing: select distinct m.perms from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id left join sys_role r on r.role_id = ur.role_id where m.status = '0' and r.status = '0' and ur.user_id = ?
+19:28:33.555 [http-nio-8080-exec-20] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - ==> Parameters: 111(Long)
+19:28:33.556 [http-nio-8080-exec-20] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - <==      Total: 0
+19:28:33.606 [http-nio-8080-exec-23] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - ==>  Preparing: select distinct r.role_id, r.role_name, r.role_key, r.role_sort, r.data_scope, r.menu_check_strictly, r.dept_check_strictly, r.status, r.del_flag, r.create_time, r.remark from sys_role r left join sys_user_role ur on ur.role_id = r.role_id left join sys_user u on u.user_id = ur.user_id left join sys_dept d on u.dept_id = d.dept_id WHERE r.del_flag = '0' and ur.user_id = ?
+19:28:33.606 [http-nio-8080-exec-23] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - ==> Parameters: 111(Long)
+19:28:33.607 [http-nio-8080-exec-23] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - <==      Total: 0
+19:28:33.608 [http-nio-8080-exec-23] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - ==>  Preparing: select distinct m.perms from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id left join sys_role r on r.role_id = ur.role_id where m.status = '0' and r.status = '0' and ur.user_id = ?
+19:28:33.608 [http-nio-8080-exec-23] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - ==> Parameters: 111(Long)
+19:28:33.609 [http-nio-8080-exec-23] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - <==      Total: 0
+19:28:33.645 [http-nio-8080-exec-24] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - ==>  Preparing: select distinct m.menu_id, m.parent_id, m.menu_name, m.path, m.component, m.`query`, m.route_name, m.visible, m.status, ifnull(m.perms,'') as perms, m.is_frame, m.is_cache, m.menu_type, m.icon, m.order_num, m.create_time from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id left join sys_role ro on ur.role_id = ro.role_id left join sys_user u on ur.user_id = u.user_id where u.user_id = ? and m.menu_type in ('M', 'C') and m.status = 0 AND ro.status = 0 order by m.parent_id, m.order_num
+19:28:33.646 [http-nio-8080-exec-24] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - ==> Parameters: 111(Long)
+19:28:33.647 [http-nio-8080-exec-24] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - <==      Total: 0
+19:28:33.651 [http-nio-8080-exec-25] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - ==>  Preparing: select distinct m.menu_id, m.parent_id, m.menu_name, m.path, m.component, m.`query`, m.route_name, m.visible, m.status, ifnull(m.perms,'') as perms, m.is_frame, m.is_cache, m.menu_type, m.icon, m.order_num, m.create_time from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id left join sys_role ro on ur.role_id = ro.role_id left join sys_user u on ur.user_id = u.user_id where u.user_id = ? and m.menu_type in ('M', 'C') and m.status = 0 AND ro.status = 0 order by m.parent_id, m.order_num
+19:28:33.653 [http-nio-8080-exec-25] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - ==> Parameters: 111(Long)
+19:28:33.654 [http-nio-8080-exec-25] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - <==      Total: 0
+19:32:29.101 [Thread-1] INFO  o.q.c.QuartzScheduler - [standby,576] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+19:32:29.103 [tomcat-shutdown] INFO  o.a.c.h.Http11NioProtocol - [log,168] - Pausing ProtocolHandler ["http-nio-8080"]
+19:32:29.243 [Thread-1] INFO  o.a.c.h.Http11NioProtocol - [log,168] - Stopping ProtocolHandler ["http-nio-8080"]
+19:32:29.262 [Thread-1] INFO  o.q.c.QuartzScheduler - [shutdown,656] - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+19:32:29.262 [Thread-1] INFO  o.q.c.QuartzScheduler - [standby,576] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+19:32:29.263 [Thread-1] INFO  o.q.c.QuartzScheduler - [shutdown,728] - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+19:32:29.263 [Thread-1] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+19:32:29.270 [Thread-1] INFO  c.a.d.p.DruidDataSource - [close,2083] - {dataSource-1} closing ...
+19:32:29.277 [Thread-1] INFO  c.a.d.p.DruidDataSource - [close,2156] - {dataSource-1} closed
+Application Version: 3.9.2
+Spring Boot Version: 4.0.3
+////////////////////////////////////////////////////////////////////
+//                          _ooOoo_                               //
+//                         o8888888o                              //
+//                         88" . "88                              //
+//                         (| ^_^ |)                              //
+//                         O\  =  /O                              //
+//                      ____/`---'\____                           //
+//                    .'  \\|     |//  `.                         //
+//                   /  \\|||  :  |||//  \                        //
+//                  /  _||||| -:- |||||-  \                       //
+//                  |   | \\\  -  /// |   |                       //
+//                  | \_|  ''\---/''  |   |                       //
+//                  \  .-\__  `-`  ___/-. /                       //
+//                ___`. .'  /--.--\  `. . ___                     //
+//              ."" '<  `.___\_<|>_/___.'  >'"".                  //
+//            | | :  `- \`.;`\ _ /`;.`/ - ` : | |                 //
+//            \  \ `-.   \_ __\ /__ _/   .-` /  /                 //
+//      ========`-.____`-.___\_____/___.-`____.-'========         //
+//                           `=---='                              //
+//      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        //
+//             佛祖保佑       永不宕机      永无BUG               //
+////////////////////////////////////////////////////////////////////
+19:32:29.496 [restartedMain] INFO  c.r.RuoYiApplication - [logStarting,54] - Starting RuoYiApplication using Java 17.0.12 with PID 18404 (E:\VS code项目\RuoYi-Vue-master\ruoyi-admin\target\classes started by chen in E:\VS code项目\RuoYi-Vue-master\ruoyi-admin)
+19:32:29.497 [restartedMain] DEBUG c.r.RuoYiApplication - [logStarting,55] - Running with Spring Boot v4.0.3, Spring v7.0.5
+19:32:29.497 [restartedMain] INFO  c.r.RuoYiApplication - [logStartupProfileInfo,658] - The following 1 profile is active: "druid"
+19:32:29.903 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,168] - Initializing ProtocolHandler ["http-nio-8080"]
+19:32:29.903 [restartedMain] INFO  o.a.c.c.StandardService - [log,168] - Starting service [Tomcat]
+19:32:29.903 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,168] - Starting Servlet engine: [Apache Tomcat/11.0.18]
+19:32:30.080 [restartedMain] DEBUG c.r.f.s.f.JwtAuthenticationTokenFilter - [init,236] - Filter 'jwtAuthenticationTokenFilter' configured for use
+19:32:30.265 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,865] - {dataSource-2} inited
+19:32:30.554 [restartedMain] DEBUG c.r.s.m.S.selectConfigList - [debug,135] - ==>  Preparing: select config_id, config_name, config_key, config_value, config_type, create_by, create_time, update_by, update_time, remark from sys_config
+19:32:30.554 [restartedMain] DEBUG c.r.s.m.S.selectConfigList - [debug,135] - ==> Parameters: 
+19:32:30.556 [restartedMain] DEBUG c.r.s.m.S.selectConfigList - [debug,135] - <==      Total: 9
+19:32:30.706 [restartedMain] DEBUG c.r.s.m.S.selectDictDataList - [debug,135] - ==>  Preparing: select dict_code, dict_sort, dict_label, dict_value, dict_type, css_class, list_class, is_default, status, create_by, create_time, remark from sys_dict_data WHERE status = ? order by dict_sort asc
+19:32:30.707 [restartedMain] DEBUG c.r.s.m.S.selectDictDataList - [debug,135] - ==> Parameters: 0(String)
+19:32:30.709 [restartedMain] DEBUG c.r.s.m.S.selectDictDataList - [debug,135] - <==      Total: 29
+19:32:30.976 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,62] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+19:32:30.976 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,224] - Quartz Scheduler v2.5.2 created.
+19:32:30.976 [restartedMain] INFO  o.q.s.RAMJobStore - [initialize,152] - RAMJobStore initialized.
+19:32:30.978 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,289] - Scheduler meta-data: Quartz Scheduler (v2.5.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+19:32:30.978 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2250] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@7e624894
+19:32:30.987 [restartedMain] DEBUG c.r.q.m.S.selectJobAll - [debug,135] - ==>  Preparing: select job_id, job_name, job_group, invoke_target, cron_expression, misfire_policy, concurrent, status, create_by, create_time, update_by, update_time, remark from sys_job
+19:32:30.987 [restartedMain] DEBUG c.r.q.m.S.selectJobAll - [debug,135] - ==> Parameters: 
+19:32:30.989 [restartedMain] DEBUG c.r.q.m.S.selectJobAll - [debug,135] - <==      Total: 3
+19:32:31.377 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,168] - Starting ProtocolHandler ["http-nio-8080"]
+19:32:31.381 [restartedMain] INFO  o.q.c.QuartzScheduler - [start,541] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+19:32:31.383 [restartedMain] INFO  c.r.RuoYiApplication - [logStarted,60] - Started RuoYiApplication in 1.915 seconds (process running for 350.949)
+19:32:31.384 [restartedMain] WARN  o.s.c.e.SpringDocAppInitializer - [init,83] - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+(????)??  若依启动成功   ?(??`?)?  
+ .-------.       ____     __        
+ |  _ _   \      \   \   /  /    
+ | ( ' )  |       \  _. /  '       
+ |(_ o _) /        _( )_ .'         
+ | (_,_).' __  ___(_ o _)'          
+ |  |\ \  |  ||   |(_,_)'         
+ |  | \ `'   /|   `-'  /           
+ |  |  \    /  \      /           
+ ''-'   `'-'    `-..-'              
+19:32:32.734 [Thread-6] INFO  o.q.c.QuartzScheduler - [standby,576] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+19:32:32.735 [tomcat-shutdown] INFO  o.a.c.h.Http11NioProtocol - [log,168] - Pausing ProtocolHandler ["http-nio-8080"]
+19:32:32.814 [Thread-6] INFO  o.a.c.h.Http11NioProtocol - [log,168] - Stopping ProtocolHandler ["http-nio-8080"]
+19:32:32.819 [Thread-6] INFO  o.q.c.QuartzScheduler - [shutdown,656] - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+19:32:32.819 [Thread-6] INFO  o.q.c.QuartzScheduler - [standby,576] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+19:32:32.819 [Thread-6] INFO  o.q.c.QuartzScheduler - [shutdown,728] - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+19:32:32.819 [Thread-6] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+19:32:32.821 [Thread-6] INFO  c.a.d.p.DruidDataSource - [close,2083] - {dataSource-2} closing ...
+19:32:32.822 [Thread-6] INFO  c.a.d.p.DruidDataSource - [close,2156] - {dataSource-2} closed
+Application Version: 3.9.2
+Spring Boot Version: 4.0.3
+////////////////////////////////////////////////////////////////////
+//                          _ooOoo_                               //
+//                         o8888888o                              //
+//                         88" . "88                              //
+//                         (| ^_^ |)                              //
+//                         O\  =  /O                              //
+//                      ____/`---'\____                           //
+//                    .'  \\|     |//  `.                         //
+//                   /  \\|||  :  |||//  \                        //
+//                  /  _||||| -:- |||||-  \                       //
+//                  |   | \\\  -  /// |   |                       //
+//                  | \_|  ''\---/''  |   |                       //
+//                  \  .-\__  `-`  ___/-. /                       //
+//                ___`. .'  /--.--\  `. . ___                     //
+//              ."" '<  `.___\_<|>_/___.'  >'"".                  //
+//            | | :  `- \`.;`\ _ /`;.`/ - ` : | |                 //
+//            \  \ `-.   \_ __\ /__ _/   .-` /  /                 //
+//      ========`-.____`-.___\_____/___.-`____.-'========         //
+//                           `=---='                              //
+//      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        //
+//             佛祖保佑       永不宕机      永无BUG               //
+////////////////////////////////////////////////////////////////////
+19:32:33.003 [restartedMain] INFO  c.r.RuoYiApplication - [logStarting,54] - Starting RuoYiApplication using Java 17.0.12 with PID 18404 (E:\VS code项目\RuoYi-Vue-master\ruoyi-admin\target\classes started by chen in E:\VS code项目\RuoYi-Vue-master\ruoyi-admin)
+19:32:33.003 [restartedMain] DEBUG c.r.RuoYiApplication - [logStarting,55] - Running with Spring Boot v4.0.3, Spring v7.0.5
+19:32:33.003 [restartedMain] INFO  c.r.RuoYiApplication - [logStartupProfileInfo,658] - The following 1 profile is active: "druid"
+19:32:33.363 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,168] - Initializing ProtocolHandler ["http-nio-8080"]
+19:32:33.363 [restartedMain] INFO  o.a.c.c.StandardService - [log,168] - Starting service [Tomcat]
+19:32:33.363 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,168] - Starting Servlet engine: [Apache Tomcat/11.0.18]
+19:32:33.485 [restartedMain] DEBUG c.r.f.s.f.JwtAuthenticationTokenFilter - [init,236] - Filter 'jwtAuthenticationTokenFilter' configured for use
+19:32:33.652 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,865] - {dataSource-3} inited
+19:32:33.913 [restartedMain] DEBUG c.r.s.m.S.selectConfigList - [debug,135] - ==>  Preparing: select config_id, config_name, config_key, config_value, config_type, create_by, create_time, update_by, update_time, remark from sys_config
+19:32:33.913 [restartedMain] DEBUG c.r.s.m.S.selectConfigList - [debug,135] - ==> Parameters: 
+19:32:33.915 [restartedMain] DEBUG c.r.s.m.S.selectConfigList - [debug,135] - <==      Total: 9
+19:32:34.077 [restartedMain] DEBUG c.r.s.m.S.selectDictDataList - [debug,135] - ==>  Preparing: select dict_code, dict_sort, dict_label, dict_value, dict_type, css_class, list_class, is_default, status, create_by, create_time, remark from sys_dict_data WHERE status = ? order by dict_sort asc
+19:32:34.078 [restartedMain] DEBUG c.r.s.m.S.selectDictDataList - [debug,135] - ==> Parameters: 0(String)
+19:32:34.080 [restartedMain] DEBUG c.r.s.m.S.selectDictDataList - [debug,135] - <==      Total: 29
+19:32:34.374 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,62] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+19:32:34.374 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,224] - Quartz Scheduler v2.5.2 created.
+19:32:34.374 [restartedMain] INFO  o.q.s.RAMJobStore - [initialize,152] - RAMJobStore initialized.
+19:32:34.374 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,289] - Scheduler meta-data: Quartz Scheduler (v2.5.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+19:32:34.374 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2250] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@262575f0
+19:32:34.385 [restartedMain] DEBUG c.r.q.m.S.selectJobAll - [debug,135] - ==>  Preparing: select job_id, job_name, job_group, invoke_target, cron_expression, misfire_policy, concurrent, status, create_by, create_time, update_by, update_time, remark from sys_job
+19:32:34.385 [restartedMain] DEBUG c.r.q.m.S.selectJobAll - [debug,135] - ==> Parameters: 
+19:32:34.386 [restartedMain] DEBUG c.r.q.m.S.selectJobAll - [debug,135] - <==      Total: 3
+19:32:34.859 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,168] - Starting ProtocolHandler ["http-nio-8080"]
+19:32:34.864 [restartedMain] INFO  o.q.c.QuartzScheduler - [start,541] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+19:32:34.865 [restartedMain] INFO  c.r.RuoYiApplication - [logStarted,60] - Started RuoYiApplication in 1.89 seconds (process running for 354.431)
+19:32:34.867 [restartedMain] WARN  o.s.c.e.SpringDocAppInitializer - [init,83] - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+(????)??  若依启动成功   ?(??`?)?  
+ .-------.       ____     __        
+ |  _ _   \      \   \   /  /    
+ | ( ' )  |       \  _. /  '       
+ |(_ o _) /        _( )_ .'         
+ | (_,_).' __  ___(_ o _)'          
+ |  |\ \  |  ||   |(_,_)'         
+ |  | \ `'   /|   `-'  /           
+ |  |  \    /  \      /           
+ ''-'   `'-'    `-..-'              
+19:32:47.204 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,168] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:32:47.211 [http-nio-8080-exec-1] ERROR c.r.f.w.e.GlobalExceptionHandler - [handleRuntimeException,100] - 请求地址'/register',发生未知异常.
+org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('\' (code 92)): was expecting double-quote to start property name
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.readJavaType(AbstractJacksonHttpMessageConverter.java:363)
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.read(AbstractJacksonHttpMessageConverter.java:319)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:203)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:181)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:156)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:174)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at com.alibaba.druid.support.jakarta.WebStatFilter.doFilter(WebStatFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at com.ruoyi.common.filter.RepeatableFilter.doFilter(RepeatableFilter.java:43)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:235)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:371)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:132)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:86)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at com.ruoyi.framework.security.filter.JwtAuthenticationTokenFilter.doFilterInternal(JwtAuthenticationTokenFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: tools.jackson.core.exc.StreamReadException: Unexpected character ('\' (code 92)): was expecting double-quote to start property name
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); byte offset: #1]
+	at tools.jackson.core.JsonParser._constructReadException(JsonParser.java:1800)
+	at tools.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:1049)
+	at tools.jackson.core.json.UTF8StreamJsonParser._handleOddName(UTF8StreamJsonParser.java:2459)
+	at tools.jackson.core.json.UTF8StreamJsonParser._parseName(UTF8StreamJsonParser.java:2110)
+	at tools.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:747)
+	at tools.jackson.databind.deser.bean.BeanDeserializer.deserialize(BeanDeserializer.java:196)
+	at tools.jackson.databind.deser.DeserializationContextExt.readRootValue(DeserializationContextExt.java:265)
+	at tools.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:1646)
+	at tools.jackson.databind.ObjectReader.readValue(ObjectReader.java:1171)
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.readJavaType(AbstractJacksonHttpMessageConverter.java:352)
+	... 105 common frames omitted
+19:32:47.216 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [logException,248] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('\' (code 92)): was expecting double-quote to start property name]
+19:33:11.381 [http-nio-8080-exec-3] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - ==>  Preparing: select distinct r.role_id, r.role_name, r.role_key, r.role_sort, r.data_scope, r.menu_check_strictly, r.dept_check_strictly, r.status, r.del_flag, r.create_time, r.remark from sys_role r left join sys_user_role ur on ur.role_id = r.role_id left join sys_user u on u.user_id = ur.user_id left join sys_dept d on u.dept_id = d.dept_id WHERE r.del_flag = '0' and ur.user_id = ?
+19:33:11.382 [http-nio-8080-exec-3] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - ==> Parameters: 111(Long)
+19:33:11.386 [http-nio-8080-exec-3] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - <==      Total: 0
+19:33:11.386 [http-nio-8080-exec-3] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - ==>  Preparing: select distinct m.perms from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id left join sys_role r on r.role_id = ur.role_id where m.status = '0' and r.status = '0' and ur.user_id = ?
+19:33:11.386 [http-nio-8080-exec-3] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - ==> Parameters: 111(Long)
+19:33:11.387 [http-nio-8080-exec-3] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - <==      Total: 0
+19:33:11.567 [http-nio-8080-exec-4] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - ==>  Preparing: select distinct m.menu_id, m.parent_id, m.menu_name, m.path, m.component, m.`query`, m.route_name, m.visible, m.status, ifnull(m.perms,'') as perms, m.is_frame, m.is_cache, m.menu_type, m.icon, m.order_num, m.create_time from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id left join sys_role ro on ur.role_id = ro.role_id left join sys_user u on ur.user_id = u.user_id where u.user_id = ? and m.menu_type in ('M', 'C') and m.status = 0 AND ro.status = 0 order by m.parent_id, m.order_num
+19:33:11.568 [http-nio-8080-exec-4] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - ==> Parameters: 111(Long)
+19:33:11.569 [http-nio-8080-exec-4] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - <==      Total: 0
+19:33:12.064 [http-nio-8080-exec-5] DEBUG c.r.s.m.S.selectNoticeListWithReadStatus - [debug,135] - ==>  Preparing: select n.notice_id as noticeId, n.notice_title as noticeTitle, n.notice_type as noticeType, n.status, n.create_by as createBy, n.create_time as createTime, case when r.notice_id is not null then true else false end as isRead from sys_notice n left join sys_notice_read r on r.notice_id = n.notice_id and r.user_id = ? where n.status = '0' order by n.notice_id desc limit ?
+19:33:12.065 [http-nio-8080-exec-5] DEBUG c.r.s.m.S.selectNoticeListWithReadStatus - [debug,135] - ==> Parameters: 111(Long), 5(Integer)
+19:33:12.066 [http-nio-8080-exec-5] DEBUG c.r.s.m.S.selectNoticeListWithReadStatus - [debug,135] - <==      Total: 0
+19:33:12.544 [http-nio-8080-exec-6] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - ==>  Preparing: select distinct r.role_id, r.role_name, r.role_key, r.role_sort, r.data_scope, r.menu_check_strictly, r.dept_check_strictly, r.status, r.del_flag, r.create_time, r.remark from sys_role r left join sys_user_role ur on ur.role_id = r.role_id left join sys_user u on u.user_id = ur.user_id left join sys_dept d on u.dept_id = d.dept_id WHERE r.del_flag = '0' and ur.user_id = ?
+19:33:12.545 [http-nio-8080-exec-6] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - ==> Parameters: 111(Long)
+19:33:12.547 [http-nio-8080-exec-6] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - <==      Total: 0
+19:33:12.547 [http-nio-8080-exec-6] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - ==>  Preparing: select distinct m.perms from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id left join sys_role r on r.role_id = ur.role_id where m.status = '0' and r.status = '0' and ur.user_id = ?
+19:33:12.548 [http-nio-8080-exec-6] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - ==> Parameters: 111(Long)
+19:33:12.549 [http-nio-8080-exec-6] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - <==      Total: 0
+19:33:12.643 [http-nio-8080-exec-7] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - ==>  Preparing: select distinct m.menu_id, m.parent_id, m.menu_name, m.path, m.component, m.`query`, m.route_name, m.visible, m.status, ifnull(m.perms,'') as perms, m.is_frame, m.is_cache, m.menu_type, m.icon, m.order_num, m.create_time from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id left join sys_role ro on ur.role_id = ro.role_id left join sys_user u on ur.user_id = u.user_id where u.user_id = ? and m.menu_type in ('M', 'C') and m.status = 0 AND ro.status = 0 order by m.parent_id, m.order_num
+19:33:12.644 [http-nio-8080-exec-7] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - ==> Parameters: 111(Long)
+19:33:12.645 [http-nio-8080-exec-7] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - <==      Total: 0
+19:33:12.719 [http-nio-8080-exec-8] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - ==>  Preparing: select distinct r.role_id, r.role_name, r.role_key, r.role_sort, r.data_scope, r.menu_check_strictly, r.dept_check_strictly, r.status, r.del_flag, r.create_time, r.remark from sys_role r left join sys_user_role ur on ur.role_id = r.role_id left join sys_user u on u.user_id = ur.user_id left join sys_dept d on u.dept_id = d.dept_id WHERE r.del_flag = '0' and ur.user_id = ?
+19:33:12.719 [http-nio-8080-exec-8] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - ==> Parameters: 111(Long)
+19:33:12.720 [http-nio-8080-exec-8] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - <==      Total: 0
+19:33:12.721 [http-nio-8080-exec-8] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - ==>  Preparing: select distinct m.perms from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id left join sys_role r on r.role_id = ur.role_id where m.status = '0' and r.status = '0' and ur.user_id = ?
+19:33:12.721 [http-nio-8080-exec-8] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - ==> Parameters: 111(Long)
+19:33:12.722 [http-nio-8080-exec-8] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - <==      Total: 0
+19:33:12.758 [http-nio-8080-exec-15] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - ==>  Preparing: select distinct m.menu_id, m.parent_id, m.menu_name, m.path, m.component, m.`query`, m.route_name, m.visible, m.status, ifnull(m.perms,'') as perms, m.is_frame, m.is_cache, m.menu_type, m.icon, m.order_num, m.create_time from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id left join sys_role ro on ur.role_id = ro.role_id left join sys_user u on ur.user_id = u.user_id where u.user_id = ? and m.menu_type in ('M', 'C') and m.status = 0 AND ro.status = 0 order by m.parent_id, m.order_num
+19:33:12.758 [http-nio-8080-exec-15] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - ==> Parameters: 111(Long)
+19:33:12.760 [http-nio-8080-exec-15] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - <==      Total: 0
+19:33:37.159 [http-nio-8080-exec-22] DEBUG c.r.s.m.S.checkUserNameUnique - [debug,135] - ==>  Preparing: select user_id, user_name from sys_user where user_name = ? and del_flag = '0' limit 1
+19:33:37.159 [http-nio-8080-exec-22] DEBUG c.r.s.m.S.checkUserNameUnique - [debug,135] - ==> Parameters: 测试1(String)
+19:33:37.160 [http-nio-8080-exec-22] DEBUG c.r.s.m.S.checkUserNameUnique - [debug,135] - <==      Total: 0
+19:33:37.222 [http-nio-8080-exec-22] DEBUG c.r.s.m.S.insertUser - [debug,135] - ==>  Preparing: insert into sys_user( user_name, nick_name, password, pwd_update_date, create_time )values( ?, ?, ?, ?, sysdate() )
+19:33:37.223 [http-nio-8080-exec-22] DEBUG c.r.s.m.S.insertUser - [debug,135] - ==> Parameters: 测试1(String), 测试1(String), $2a$10$2wfU6G9Th7jvosqtQud1juCmP7EuPkWFEj2ifUUwfifW3MefdQMPG(String), 2026-05-26 19:33:37.16(Timestamp)
+19:33:37.227 [http-nio-8080-exec-22] DEBUG c.r.s.m.S.insertUser - [debug,135] - <==    Updates: 1
+19:33:37.228 [http-nio-8080-exec-22] DEBUG c.r.s.m.S.selectUserByUserName - [debug,135] - ==>  Preparing: select u.user_id, u.dept_id, u.user_name, u.nick_name, u.email, u.avatar, u.phonenumber, u.password, u.sex, u.status, u.del_flag, u.login_ip, u.login_date, u.pwd_update_date, u.birthday, u.signature, u.create_by, u.create_time, u.update_by, u.update_time, u.remark, d.dept_id, d.parent_id, d.ancestors, d.dept_name, d.order_num, d.leader, d.status as dept_status, r.role_id, r.role_name, r.role_key, r.role_sort, r.data_scope, r.status as role_status from sys_user u left join sys_dept d on u.dept_id = d.dept_id left join sys_user_role ur on u.user_id = ur.user_id left join sys_role r on r.role_id = ur.role_id where u.user_name = ? and u.del_flag = '0'
+19:33:37.228 [http-nio-8080-exec-22] DEBUG c.r.s.m.S.selectUserByUserName - [debug,135] - ==> Parameters: 测试1(String)
+19:33:37.231 [http-nio-8080-exec-22] DEBUG c.r.s.m.S.selectUserByUserName - [debug,135] - <==      Total: 1
+19:33:37.231 [http-nio-8080-exec-22] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - ==>  Preparing: select distinct m.perms from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id left join sys_role r on r.role_id = ur.role_id where m.status = '0' and r.status = '0' and ur.user_id = ?
+19:33:37.231 [http-nio-8080-exec-22] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - ==> Parameters: 112(Long)
+19:33:37.233 [http-nio-8080-exec-22] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - <==      Total: 0
+19:33:38.614 [http-nio-8080-exec-16] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - ==>  Preparing: select distinct r.role_id, r.role_name, r.role_key, r.role_sort, r.data_scope, r.menu_check_strictly, r.dept_check_strictly, r.status, r.del_flag, r.create_time, r.remark from sys_role r left join sys_user_role ur on ur.role_id = r.role_id left join sys_user u on u.user_id = ur.user_id left join sys_dept d on u.dept_id = d.dept_id WHERE r.del_flag = '0' and ur.user_id = ?
+19:33:38.615 [http-nio-8080-exec-16] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - ==> Parameters: 112(Long)
+19:33:38.617 [http-nio-8080-exec-16] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - <==      Total: 0
+19:33:38.618 [http-nio-8080-exec-16] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - ==>  Preparing: select distinct m.perms from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id left join sys_role r on r.role_id = ur.role_id where m.status = '0' and r.status = '0' and ur.user_id = ?
+19:33:38.619 [http-nio-8080-exec-16] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - ==> Parameters: 112(Long)
+19:33:38.620 [http-nio-8080-exec-16] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - <==      Total: 0
+19:33:38.683 [http-nio-8080-exec-24] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - ==>  Preparing: select distinct m.menu_id, m.parent_id, m.menu_name, m.path, m.component, m.`query`, m.route_name, m.visible, m.status, ifnull(m.perms,'') as perms, m.is_frame, m.is_cache, m.menu_type, m.icon, m.order_num, m.create_time from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id left join sys_role ro on ur.role_id = ro.role_id left join sys_user u on ur.user_id = u.user_id where u.user_id = ? and m.menu_type in ('M', 'C') and m.status = 0 AND ro.status = 0 order by m.parent_id, m.order_num
+19:33:38.684 [http-nio-8080-exec-24] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - ==> Parameters: null
+19:33:38.686 [http-nio-8080-exec-24] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - <==      Total: 0
+19:33:38.965 [http-nio-8080-exec-25] DEBUG c.r.s.m.S.selectNoticeListWithReadStatus - [debug,135] - ==>  Preparing: select n.notice_id as noticeId, n.notice_title as noticeTitle, n.notice_type as noticeType, n.status, n.create_by as createBy, n.create_time as createTime, case when r.notice_id is not null then true else false end as isRead from sys_notice n left join sys_notice_read r on r.notice_id = n.notice_id and r.user_id = ? where n.status = '0' order by n.notice_id desc limit ?
+19:33:38.966 [http-nio-8080-exec-25] DEBUG c.r.s.m.S.selectNoticeListWithReadStatus - [debug,135] - ==> Parameters: null, 5(Integer)
+19:33:38.967 [http-nio-8080-exec-25] DEBUG c.r.s.m.S.selectNoticeListWithReadStatus - [debug,135] - <==      Total: 0
+19:33:39.156 [http-nio-8080-exec-19] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - ==>  Preparing: select distinct r.role_id, r.role_name, r.role_key, r.role_sort, r.data_scope, r.menu_check_strictly, r.dept_check_strictly, r.status, r.del_flag, r.create_time, r.remark from sys_role r left join sys_user_role ur on ur.role_id = r.role_id left join sys_user u on u.user_id = ur.user_id left join sys_dept d on u.dept_id = d.dept_id WHERE r.del_flag = '0' and ur.user_id = ?
+19:33:39.157 [http-nio-8080-exec-19] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - ==> Parameters: 112(Long)
+19:33:39.159 [http-nio-8080-exec-19] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - <==      Total: 0
+19:33:39.159 [http-nio-8080-exec-19] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - ==>  Preparing: select distinct m.perms from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id left join sys_role r on r.role_id = ur.role_id where m.status = '0' and r.status = '0' and ur.user_id = ?
+19:33:39.160 [http-nio-8080-exec-19] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - ==> Parameters: 112(Long)
+19:33:39.161 [http-nio-8080-exec-19] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - <==      Total: 0
+19:33:39.198 [http-nio-8080-exec-20] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - ==>  Preparing: select distinct m.menu_id, m.parent_id, m.menu_name, m.path, m.component, m.`query`, m.route_name, m.visible, m.status, ifnull(m.perms,'') as perms, m.is_frame, m.is_cache, m.menu_type, m.icon, m.order_num, m.create_time from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id left join sys_role ro on ur.role_id = ro.role_id left join sys_user u on ur.user_id = u.user_id where u.user_id = ? and m.menu_type in ('M', 'C') and m.status = 0 AND ro.status = 0 order by m.parent_id, m.order_num
+19:33:39.199 [http-nio-8080-exec-20] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - ==> Parameters: null
+19:33:39.200 [http-nio-8080-exec-20] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - <==      Total: 0
+19:33:39.262 [http-nio-8080-exec-21] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - ==>  Preparing: select distinct r.role_id, r.role_name, r.role_key, r.role_sort, r.data_scope, r.menu_check_strictly, r.dept_check_strictly, r.status, r.del_flag, r.create_time, r.remark from sys_role r left join sys_user_role ur on ur.role_id = r.role_id left join sys_user u on u.user_id = ur.user_id left join sys_dept d on u.dept_id = d.dept_id WHERE r.del_flag = '0' and ur.user_id = ?
+19:33:39.263 [http-nio-8080-exec-21] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - ==> Parameters: 112(Long)
+19:33:39.264 [http-nio-8080-exec-21] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - <==      Total: 0
+19:33:39.264 [http-nio-8080-exec-21] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - ==>  Preparing: select distinct m.perms from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id left join sys_role r on r.role_id = ur.role_id where m.status = '0' and r.status = '0' and ur.user_id = ?
+19:33:39.265 [http-nio-8080-exec-21] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - ==> Parameters: 112(Long)
+19:33:39.265 [http-nio-8080-exec-21] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - <==      Total: 0
+19:33:39.302 [http-nio-8080-exec-17] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - ==>  Preparing: select distinct m.menu_id, m.parent_id, m.menu_name, m.path, m.component, m.`query`, m.route_name, m.visible, m.status, ifnull(m.perms,'') as perms, m.is_frame, m.is_cache, m.menu_type, m.icon, m.order_num, m.create_time from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id left join sys_role ro on ur.role_id = ro.role_id left join sys_user u on ur.user_id = u.user_id where u.user_id = ? and m.menu_type in ('M', 'C') and m.status = 0 AND ro.status = 0 order by m.parent_id, m.order_num
+19:33:39.303 [http-nio-8080-exec-17] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - ==> Parameters: null
+19:33:39.304 [http-nio-8080-exec-17] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - <==      Total: 0
+19:33:41.043 [http-nio-8080-exec-9] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - ==>  Preparing: select distinct r.role_id, r.role_name, r.role_key, r.role_sort, r.data_scope, r.menu_check_strictly, r.dept_check_strictly, r.status, r.del_flag, r.create_time, r.remark from sys_role r left join sys_user_role ur on ur.role_id = r.role_id left join sys_user u on u.user_id = ur.user_id left join sys_dept d on u.dept_id = d.dept_id WHERE r.del_flag = '0' and ur.user_id = ?
+19:33:41.044 [http-nio-8080-exec-9] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - ==> Parameters: 112(Long)
+19:33:41.045 [http-nio-8080-exec-9] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - <==      Total: 0
+19:33:41.045 [http-nio-8080-exec-9] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - ==>  Preparing: select distinct m.perms from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id left join sys_role r on r.role_id = ur.role_id where m.status = '0' and r.status = '0' and ur.user_id = ?
+19:33:41.045 [http-nio-8080-exec-9] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - ==> Parameters: 112(Long)
+19:33:41.047 [http-nio-8080-exec-9] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - <==      Total: 0
+19:33:41.083 [http-nio-8080-exec-18] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - ==>  Preparing: select distinct m.menu_id, m.parent_id, m.menu_name, m.path, m.component, m.`query`, m.route_name, m.visible, m.status, ifnull(m.perms,'') as perms, m.is_frame, m.is_cache, m.menu_type, m.icon, m.order_num, m.create_time from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id left join sys_role ro on ur.role_id = ro.role_id left join sys_user u on ur.user_id = u.user_id where u.user_id = ? and m.menu_type in ('M', 'C') and m.status = 0 AND ro.status = 0 order by m.parent_id, m.order_num
+19:33:41.084 [http-nio-8080-exec-18] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - ==> Parameters: null
+19:33:41.085 [http-nio-8080-exec-18] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - <==      Total: 0
+19:33:41.437 [http-nio-8080-exec-31] DEBUG c.r.s.m.S.selectNoticeListWithReadStatus - [debug,135] - ==>  Preparing: select n.notice_id as noticeId, n.notice_title as noticeTitle, n.notice_type as noticeType, n.status, n.create_by as createBy, n.create_time as createTime, case when r.notice_id is not null then true else false end as isRead from sys_notice n left join sys_notice_read r on r.notice_id = n.notice_id and r.user_id = ? where n.status = '0' order by n.notice_id desc limit ?
+19:33:41.438 [http-nio-8080-exec-31] DEBUG c.r.s.m.S.selectNoticeListWithReadStatus - [debug,135] - ==> Parameters: null, 5(Integer)
+19:33:41.439 [http-nio-8080-exec-31] DEBUG c.r.s.m.S.selectNoticeListWithReadStatus - [debug,135] - <==      Total: 0
+19:33:41.649 [http-nio-8080-exec-26] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - ==>  Preparing: select distinct r.role_id, r.role_name, r.role_key, r.role_sort, r.data_scope, r.menu_check_strictly, r.dept_check_strictly, r.status, r.del_flag, r.create_time, r.remark from sys_role r left join sys_user_role ur on ur.role_id = r.role_id left join sys_user u on u.user_id = ur.user_id left join sys_dept d on u.dept_id = d.dept_id WHERE r.del_flag = '0' and ur.user_id = ?
+19:33:41.649 [http-nio-8080-exec-26] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - ==> Parameters: 112(Long)
+19:33:41.651 [http-nio-8080-exec-26] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - <==      Total: 0
+19:33:41.651 [http-nio-8080-exec-26] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - ==>  Preparing: select distinct m.perms from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id left join sys_role r on r.role_id = ur.role_id where m.status = '0' and r.status = '0' and ur.user_id = ?
+19:33:41.651 [http-nio-8080-exec-26] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - ==> Parameters: 112(Long)
+19:33:41.652 [http-nio-8080-exec-26] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - <==      Total: 0
+19:33:41.709 [http-nio-8080-exec-27] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - ==>  Preparing: select distinct r.role_id, r.role_name, r.role_key, r.role_sort, r.data_scope, r.menu_check_strictly, r.dept_check_strictly, r.status, r.del_flag, r.create_time, r.remark from sys_role r left join sys_user_role ur on ur.role_id = r.role_id left join sys_user u on u.user_id = ur.user_id left join sys_dept d on u.dept_id = d.dept_id WHERE r.del_flag = '0' and ur.user_id = ?
+19:33:41.710 [http-nio-8080-exec-27] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - ==> Parameters: 112(Long)
+19:33:41.711 [http-nio-8080-exec-27] DEBUG c.r.s.m.S.selectRolePermissionByUserId - [debug,135] - <==      Total: 0
+19:33:41.712 [http-nio-8080-exec-27] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - ==>  Preparing: select distinct m.perms from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id left join sys_role r on r.role_id = ur.role_id where m.status = '0' and r.status = '0' and ur.user_id = ?
+19:33:41.712 [http-nio-8080-exec-27] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - ==> Parameters: 112(Long)
+19:33:41.713 [http-nio-8080-exec-28] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - ==>  Preparing: select distinct m.menu_id, m.parent_id, m.menu_name, m.path, m.component, m.`query`, m.route_name, m.visible, m.status, ifnull(m.perms,'') as perms, m.is_frame, m.is_cache, m.menu_type, m.icon, m.order_num, m.create_time from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id left join sys_role ro on ur.role_id = ro.role_id left join sys_user u on ur.user_id = u.user_id where u.user_id = ? and m.menu_type in ('M', 'C') and m.status = 0 AND ro.status = 0 order by m.parent_id, m.order_num
+19:33:41.713 [http-nio-8080-exec-27] DEBUG c.r.s.m.S.selectMenuPermsByUserId - [debug,135] - <==      Total: 0
+19:33:41.713 [http-nio-8080-exec-28] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - ==> Parameters: null
+19:33:41.714 [http-nio-8080-exec-28] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - <==      Total: 0
+19:33:41.785 [http-nio-8080-exec-29] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - ==>  Preparing: select distinct m.menu_id, m.parent_id, m.menu_name, m.path, m.component, m.`query`, m.route_name, m.visible, m.status, ifnull(m.perms,'') as perms, m.is_frame, m.is_cache, m.menu_type, m.icon, m.order_num, m.create_time from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id left join sys_role ro on ur.role_id = ro.role_id left join sys_user u on ur.user_id = u.user_id where u.user_id = ? and m.menu_type in ('M', 'C') and m.status = 0 AND ro.status = 0 order by m.parent_id, m.order_num
+19:33:41.786 [http-nio-8080-exec-29] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - ==> Parameters: null
+19:33:41.788 [http-nio-8080-exec-29] DEBUG c.r.s.m.S.selectMenuTreeByUserId - [debug,135] - <==      Total: 0
+19:36:22.465 [Thread-10] INFO  o.q.c.QuartzScheduler - [standby,576] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+19:36:22.465 [tomcat-shutdown] INFO  o.a.c.h.Http11NioProtocol - [log,168] - Pausing ProtocolHandler ["http-nio-8080"]
+19:36:22.624 [Thread-10] INFO  o.a.c.h.Http11NioProtocol - [log,168] - Stopping ProtocolHandler ["http-nio-8080"]
+19:36:22.637 [Thread-10] INFO  o.q.c.QuartzScheduler - [shutdown,656] - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+19:36:22.637 [Thread-10] INFO  o.q.c.QuartzScheduler - [standby,576] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+19:36:22.637 [Thread-10] INFO  o.q.c.QuartzScheduler - [shutdown,728] - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+19:36:22.638 [Thread-10] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+19:36:22.641 [Thread-10] INFO  c.a.d.p.DruidDataSource - [close,2083] - {dataSource-3} closing ...
+19:36:22.644 [Thread-10] INFO  c.a.d.p.DruidDataSource - [close,2156] - {dataSource-3} closed
+Application Version: 3.9.2
+Spring Boot Version: 4.0.3
+////////////////////////////////////////////////////////////////////
+//                          _ooOoo_                               //
+//                         o8888888o                              //
+//                         88" . "88                              //
+//                         (| ^_^ |)                              //
+//                         O\  =  /O                              //
+//                      ____/`---'\____                           //
+//                    .'  \\|     |//  `.                         //
+//                   /  \\|||  :  |||//  \                        //
+//                  /  _||||| -:- |||||-  \                       //
+//                  |   | \\\  -  /// |   |                       //
+//                  | \_|  ''\---/''  |   |                       //
+//                  \  .-\__  `-`  ___/-. /                       //
+//                ___`. .'  /--.--\  `. . ___                     //
+//              ."" '<  `.___\_<|>_/___.'  >'"".                  //
+//            | | :  `- \`.;`\ _ /`;.`/ - ` : | |                 //
+//            \  \ `-.   \_ __\ /__ _/   .-` /  /                 //
+//      ========`-.____`-.___\_____/___.-`____.-'========         //
+//                           `=---='                              //
+//      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        //
+//             佛祖保佑       永不宕机      永无BUG               //
+////////////////////////////////////////////////////////////////////
+19:36:22.857 [restartedMain] INFO  c.r.RuoYiApplication - [logStarting,54] - Starting RuoYiApplication using Java 17.0.12 with PID 18404 (E:\VS code项目\RuoYi-Vue-master\ruoyi-admin\target\classes started by chen in E:\VS code项目\RuoYi-Vue-master\ruoyi-admin)
+19:36:22.857 [restartedMain] DEBUG c.r.RuoYiApplication - [logStarting,55] - Running with Spring Boot v4.0.3, Spring v7.0.5
+19:36:22.857 [restartedMain] INFO  c.r.RuoYiApplication - [logStartupProfileInfo,658] - The following 1 profile is active: "druid"
+19:36:23.261 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,168] - Initializing ProtocolHandler ["http-nio-8080"]
+19:36:23.261 [restartedMain] INFO  o.a.c.c.StandardService - [log,168] - Starting service [Tomcat]
+19:36:23.261 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,168] - Starting Servlet engine: [Apache Tomcat/11.0.18]
+19:36:23.402 [restartedMain] DEBUG c.r.f.s.f.JwtAuthenticationTokenFilter - [init,236] - Filter 'jwtAuthenticationTokenFilter' configured for use
+19:36:23.564 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,865] - {dataSource-4} inited
+19:36:23.823 [restartedMain] DEBUG c.r.s.m.S.selectConfigList - [debug,135] - ==>  Preparing: select config_id, config_name, config_key, config_value, config_type, create_by, create_time, update_by, update_time, remark from sys_config
+19:36:23.823 [restartedMain] DEBUG c.r.s.m.S.selectConfigList - [debug,135] - ==> Parameters: 
+19:36:23.824 [restartedMain] DEBUG c.r.s.m.S.selectConfigList - [debug,135] - <==      Total: 9
+19:36:23.960 [restartedMain] DEBUG c.r.s.m.S.selectDictDataList - [debug,135] - ==>  Preparing: select dict_code, dict_sort, dict_label, dict_value, dict_type, css_class, list_class, is_default, status, create_by, create_time, remark from sys_dict_data WHERE status = ? order by dict_sort asc
+19:36:23.960 [restartedMain] DEBUG c.r.s.m.S.selectDictDataList - [debug,135] - ==> Parameters: 0(String)
+19:36:23.963 [restartedMain] DEBUG c.r.s.m.S.selectDictDataList - [debug,135] - <==      Total: 29
+19:36:24.224 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,62] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+19:36:24.224 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,224] - Quartz Scheduler v2.5.2 created.
+19:36:24.224 [restartedMain] INFO  o.q.s.RAMJobStore - [initialize,152] - RAMJobStore initialized.
+19:36:24.224 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,289] - Scheduler meta-data: Quartz Scheduler (v2.5.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+19:36:24.224 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2250] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@6e7e01d8
+19:36:24.234 [restartedMain] DEBUG c.r.q.m.S.selectJobAll - [debug,135] - ==>  Preparing: select job_id, job_name, job_group, invoke_target, cron_expression, misfire_policy, concurrent, status, create_by, create_time, update_by, update_time, remark from sys_job
+19:36:24.235 [restartedMain] DEBUG c.r.q.m.S.selectJobAll - [debug,135] - ==> Parameters: 
+19:36:24.236 [restartedMain] DEBUG c.r.q.m.S.selectJobAll - [debug,135] - <==      Total: 3
+19:36:24.624 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,168] - Starting ProtocolHandler ["http-nio-8080"]
+19:36:24.629 [restartedMain] INFO  o.q.c.QuartzScheduler - [start,541] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+19:36:24.632 [restartedMain] INFO  c.r.RuoYiApplication - [logStarted,60] - Started RuoYiApplication in 1.822 seconds (process running for 584.197)
+19:36:24.633 [restartedMain] WARN  o.s.c.e.SpringDocAppInitializer - [init,83] - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+(????)??  若依启动成功   ?(??`?)?  
+ .-------.       ____     __        
+ |  _ _   \      \   \   /  /    
+ | ( ' )  |       \  _. /  '       
+ |(_ o _) /        _( )_ .'         
+ | (_,_).' __  ___(_ o _)'          
+ |  |\ \  |  ||   |(_,_)'         
+ |  | \ `'   /|   `-'  /           
+ |  |  \    /  \      /           
+ ''-'   `'-'    `-..-'              
+19:36:25.956 [Thread-14] INFO  o.q.c.QuartzScheduler - [standby,576] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+19:36:25.957 [tomcat-shutdown] INFO  o.a.c.h.Http11NioProtocol - [log,168] - Pausing ProtocolHandler ["http-nio-8080"]
+19:36:26.029 [Thread-14] INFO  o.a.c.h.Http11NioProtocol - [log,168] - Stopping ProtocolHandler ["http-nio-8080"]
+19:36:26.035 [Thread-14] INFO  o.q.c.QuartzScheduler - [shutdown,656] - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+19:36:26.035 [Thread-14] INFO  o.q.c.QuartzScheduler - [standby,576] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+19:36:26.035 [Thread-14] INFO  o.q.c.QuartzScheduler - [shutdown,728] - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+19:36:26.036 [Thread-14] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+19:36:26.038 [Thread-14] INFO  c.a.d.p.DruidDataSource - [close,2083] - {dataSource-4} closing ...
+19:36:26.040 [Thread-14] INFO  c.a.d.p.DruidDataSource - [close,2156] - {dataSource-4} closed
+Application Version: 3.9.2
+Spring Boot Version: 4.0.3
+////////////////////////////////////////////////////////////////////
+//                          _ooOoo_                               //
+//                         o8888888o                              //
+//                         88" . "88                              //
+//                         (| ^_^ |)                              //
+//                         O\  =  /O                              //
+//                      ____/`---'\____                           //
+//                    .'  \\|     |//  `.                         //
+//                   /  \\|||  :  |||//  \                        //
+//                  /  _||||| -:- |||||-  \                       //
+//                  |   | \\\  -  /// |   |                       //
+//                  | \_|  ''\---/''  |   |                       //
+//                  \  .-\__  `-`  ___/-. /                       //
+//                ___`. .'  /--.--\  `. . ___                     //
+//              ."" '<  `.___\_<|>_/___.'  >'"".                  //
+//            | | :  `- \`.;`\ _ /`;.`/ - ` : | |                 //
+//            \  \ `-.   \_ __\ /__ _/   .-` /  /                 //
+//      ========`-.____`-.___\_____/___.-`____.-'========         //
+//                           `=---='                              //
+//      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        //
+//             佛祖保佑       永不宕机      永无BUG               //
+////////////////////////////////////////////////////////////////////
+19:36:26.222 [restartedMain] INFO  c.r.RuoYiApplication - [logStarting,54] - Starting RuoYiApplication using Java 17.0.12 with PID 18404 (E:\VS code项目\RuoYi-Vue-master\ruoyi-admin\target\classes started by chen in E:\VS code项目\RuoYi-Vue-master\ruoyi-admin)
+19:36:26.222 [restartedMain] DEBUG c.r.RuoYiApplication - [logStarting,55] - Running with Spring Boot v4.0.3, Spring v7.0.5
+19:36:26.222 [restartedMain] INFO  c.r.RuoYiApplication - [logStartupProfileInfo,658] - The following 1 profile is active: "druid"
+19:36:26.554 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,168] - Initializing ProtocolHandler ["http-nio-8080"]
+19:36:26.556 [restartedMain] INFO  o.a.c.c.StandardService - [log,168] - Starting service [Tomcat]
+19:36:26.556 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,168] - Starting Servlet engine: [Apache Tomcat/11.0.18]
+19:36:26.676 [restartedMain] DEBUG c.r.f.s.f.JwtAuthenticationTokenFilter - [init,236] - Filter 'jwtAuthenticationTokenFilter' configured for use
+19:36:26.841 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,865] - {dataSource-5} inited
+19:36:27.123 [restartedMain] DEBUG c.r.s.m.S.selectConfigList - [debug,135] - ==>  Preparing: select config_id, config_name, config_key, config_value, config_type, create_by, create_time, update_by, update_time, remark from sys_config
+19:36:27.124 [restartedMain] DEBUG c.r.s.m.S.selectConfigList - [debug,135] - ==> Parameters: 
+19:36:27.125 [restartedMain] DEBUG c.r.s.m.S.selectConfigList - [debug,135] - <==      Total: 9
+19:36:27.284 [restartedMain] DEBUG c.r.s.m.S.selectDictDataList - [debug,135] - ==>  Preparing: select dict_code, dict_sort, dict_label, dict_value, dict_type, css_class, list_class, is_default, status, create_by, create_time, remark from sys_dict_data WHERE status = ? order by dict_sort asc
+19:36:27.285 [restartedMain] DEBUG c.r.s.m.S.selectDictDataList - [debug,135] - ==> Parameters: 0(String)
+19:36:27.287 [restartedMain] DEBUG c.r.s.m.S.selectDictDataList - [debug,135] - <==      Total: 29
+19:36:27.613 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,62] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+19:36:27.614 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,224] - Quartz Scheduler v2.5.2 created.
+19:36:27.614 [restartedMain] INFO  o.q.s.RAMJobStore - [initialize,152] - RAMJobStore initialized.
+19:36:27.614 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,289] - Scheduler meta-data: Quartz Scheduler (v2.5.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+19:36:27.614 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2250] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@fc1b546
+19:36:27.624 [restartedMain] DEBUG c.r.q.m.S.selectJobAll - [debug,135] - ==>  Preparing: select job_id, job_name, job_group, invoke_target, cron_expression, misfire_policy, concurrent, status, create_by, create_time, update_by, update_time, remark from sys_job
+19:36:27.625 [restartedMain] DEBUG c.r.q.m.S.selectJobAll - [debug,135] - ==> Parameters: 
+19:36:27.626 [restartedMain] DEBUG c.r.q.m.S.selectJobAll - [debug,135] - <==      Total: 3
+19:36:28.096 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,168] - Starting ProtocolHandler ["http-nio-8080"]
+19:36:28.106 [restartedMain] INFO  o.q.c.QuartzScheduler - [start,541] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+19:36:28.109 [restartedMain] INFO  c.r.RuoYiApplication - [logStarted,60] - Started RuoYiApplication in 1.91 seconds (process running for 587.675)
+19:36:28.109 [restartedMain] WARN  o.s.c.e.SpringDocAppInitializer - [init,83] - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+(????)??  若依启动成功   ?(??`?)?  
+ .-------.       ____     __        
+ |  _ _   \      \   \   /  /    
+ | ( ' )  |       \  _. /  '       
+ |(_ o _) /        _( )_ .'         
+ | (_,_).' __  ___(_ o _)'          
+ |  |\ \  |  ||   |(_,_)'         
+ |  | \ `'   /|   `-'  /           
+ |  |  \    /  \      /           
+ ''-'   `'-'    `-..-'              
+19:36:37.494 [Thread-18] INFO  o.q.c.QuartzScheduler - [standby,576] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+19:36:37.494 [tomcat-shutdown] INFO  o.a.c.h.Http11NioProtocol - [log,168] - Pausing ProtocolHandler ["http-nio-8080"]
+19:36:37.582 [Thread-18] INFO  o.a.c.h.Http11NioProtocol - [log,168] - Stopping ProtocolHandler ["http-nio-8080"]
+19:36:37.586 [Thread-18] INFO  o.q.c.QuartzScheduler - [shutdown,656] - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+19:36:37.587 [Thread-18] INFO  o.q.c.QuartzScheduler - [standby,576] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+19:36:37.587 [Thread-18] INFO  o.q.c.QuartzScheduler - [shutdown,728] - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+19:36:37.587 [Thread-18] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+19:36:37.589 [Thread-18] INFO  c.a.d.p.DruidDataSource - [close,2083] - {dataSource-5} closing ...
+19:36:37.590 [Thread-18] INFO  c.a.d.p.DruidDataSource - [close,2156] - {dataSource-5} closed
+Application Version: 3.9.2
+Spring Boot Version: 4.0.3
+////////////////////////////////////////////////////////////////////
+//                          _ooOoo_                               //
+//                         o8888888o                              //
+//                         88" . "88                              //
+//                         (| ^_^ |)                              //
+//                         O\  =  /O                              //
+//                      ____/`---'\____                           //
+//                    .'  \\|     |//  `.                         //
+//                   /  \\|||  :  |||//  \                        //
+//                  /  _||||| -:- |||||-  \                       //
+//                  |   | \\\  -  /// |   |                       //
+//                  | \_|  ''\---/''  |   |                       //
+//                  \  .-\__  `-`  ___/-. /                       //
+//                ___`. .'  /--.--\  `. . ___                     //
+//              ."" '<  `.___\_<|>_/___.'  >'"".                  //
+//            | | :  `- \`.;`\ _ /`;.`/ - ` : | |                 //
+//            \  \ `-.   \_ __\ /__ _/   .-` /  /                 //
+//      ========`-.____`-.___\_____/___.-`____.-'========         //
+//                           `=---='                              //
+//      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        //
+//             佛祖保佑       永不宕机      永无BUG               //
+////////////////////////////////////////////////////////////////////
+19:36:37.755 [restartedMain] INFO  c.r.RuoYiApplication - [logStarting,54] - Starting RuoYiApplication using Java 17.0.12 with PID 18404 (E:\VS code项目\RuoYi-Vue-master\ruoyi-admin\target\classes started by chen in E:\VS code项目\RuoYi-Vue-master\ruoyi-admin)
+19:36:37.755 [restartedMain] DEBUG c.r.RuoYiApplication - [logStarting,55] - Running with Spring Boot v4.0.3, Spring v7.0.5
+19:36:37.755 [restartedMain] INFO  c.r.RuoYiApplication - [logStartupProfileInfo,658] - The following 1 profile is active: "druid"
+19:36:38.071 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,168] - Initializing ProtocolHandler ["http-nio-8080"]
+19:36:38.071 [restartedMain] INFO  o.a.c.c.StandardService - [log,168] - Starting service [Tomcat]
+19:36:38.071 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,168] - Starting Servlet engine: [Apache Tomcat/11.0.18]
+19:36:38.184 [restartedMain] DEBUG c.r.f.s.f.JwtAuthenticationTokenFilter - [init,236] - Filter 'jwtAuthenticationTokenFilter' configured for use
+19:36:38.339 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,865] - {dataSource-6} inited
+19:36:38.579 [restartedMain] DEBUG c.r.s.m.S.selectConfigList - [debug,135] - ==>  Preparing: select config_id, config_name, config_key, config_value, config_type, create_by, create_time, update_by, update_time, remark from sys_config
+19:36:38.580 [restartedMain] DEBUG c.r.s.m.S.selectConfigList - [debug,135] - ==> Parameters: 
+19:36:38.580 [restartedMain] DEBUG c.r.s.m.S.selectConfigList - [debug,135] - <==      Total: 9
+19:36:38.736 [restartedMain] DEBUG c.r.s.m.S.selectDictDataList - [debug,135] - ==>  Preparing: select dict_code, dict_sort, dict_label, dict_value, dict_type, css_class, list_class, is_default, status, create_by, create_time, remark from sys_dict_data WHERE status = ? order by dict_sort asc
+19:36:38.736 [restartedMain] DEBUG c.r.s.m.S.selectDictDataList - [debug,135] - ==> Parameters: 0(String)
+19:36:38.737 [restartedMain] DEBUG c.r.s.m.S.selectDictDataList - [debug,135] - <==      Total: 29
+19:36:39.039 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,62] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+19:36:39.039 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,224] - Quartz Scheduler v2.5.2 created.
+19:36:39.039 [restartedMain] INFO  o.q.s.RAMJobStore - [initialize,152] - RAMJobStore initialized.
+19:36:39.039 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,289] - Scheduler meta-data: Quartz Scheduler (v2.5.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+19:36:39.039 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2250] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@3d4a3058
+19:36:39.048 [restartedMain] DEBUG c.r.q.m.S.selectJobAll - [debug,135] - ==>  Preparing: select job_id, job_name, job_group, invoke_target, cron_expression, misfire_policy, concurrent, status, create_by, create_time, update_by, update_time, remark from sys_job
+19:36:39.049 [restartedMain] DEBUG c.r.q.m.S.selectJobAll - [debug,135] - ==> Parameters: 
+19:36:39.050 [restartedMain] DEBUG c.r.q.m.S.selectJobAll - [debug,135] - <==      Total: 3
+19:36:39.540 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,168] - Starting ProtocolHandler ["http-nio-8080"]
+19:36:39.547 [restartedMain] INFO  o.q.c.QuartzScheduler - [start,541] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+19:36:39.549 [restartedMain] INFO  c.r.RuoYiApplication - [logStarted,60] - Started RuoYiApplication in 1.814 seconds (process running for 599.114)
+19:36:39.550 [restartedMain] WARN  o.s.c.e.SpringDocAppInitializer - [init,83] - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+(????)??  若依启动成功   ?(??`?)?  
+ .-------.       ____     __        
+ |  _ _   \      \   \   /  /    
+ | ( ' )  |       \  _. /  '       
+ |(_ o _) /        _( )_ .'         
+ | (_,_).' __  ___(_ o _)'          
+ |  |\ \  |  ||   |(_,_)'         
+ |  | \ `'   /|   `-'  /           
+ |  |  \    /  \      /           
+ ''-'   `'-'    `-..-'              
+19:37:15.247 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,168] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:37:15.250 [http-nio-8080-exec-1] ERROR c.r.f.w.e.GlobalExceptionHandler - [handleRuntimeException,100] - 请求地址'/register',发生未知异常.
+org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('\' (code 92)): was expecting double-quote to start property name
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.readJavaType(AbstractJacksonHttpMessageConverter.java:363)
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.read(AbstractJacksonHttpMessageConverter.java:319)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:203)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:181)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:156)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:174)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at com.alibaba.druid.support.jakarta.WebStatFilter.doFilter(WebStatFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at com.ruoyi.common.filter.RepeatableFilter.doFilter(RepeatableFilter.java:43)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:235)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:371)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:132)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:86)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at com.ruoyi.framework.security.filter.JwtAuthenticationTokenFilter.doFilterInternal(JwtAuthenticationTokenFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: tools.jackson.core.exc.StreamReadException: Unexpected character ('\' (code 92)): was expecting double-quote to start property name
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); byte offset: #1]
+	at tools.jackson.core.JsonParser._constructReadException(JsonParser.java:1800)
+	at tools.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:1049)
+	at tools.jackson.core.json.UTF8StreamJsonParser._handleOddName(UTF8StreamJsonParser.java:2459)
+	at tools.jackson.core.json.UTF8StreamJsonParser._parseName(UTF8StreamJsonParser.java:2110)
+	at tools.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:747)
+	at tools.jackson.databind.deser.bean.BeanDeserializer.deserialize(BeanDeserializer.java:196)
+	at tools.jackson.databind.deser.DeserializationContextExt.readRootValue(DeserializationContextExt.java:265)
+	at tools.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:1646)
+	at tools.jackson.databind.ObjectReader.readValue(ObjectReader.java:1171)
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.readJavaType(AbstractJacksonHttpMessageConverter.java:352)
+	... 105 common frames omitted
+19:37:15.252 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [logException,248] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('\' (code 92)): was expecting double-quote to start property name]
+19:37:18.659 [http-nio-8080-exec-3] ERROR c.r.f.w.e.GlobalExceptionHandler - [handleRuntimeException,100] - 请求地址'/register',发生未知异常.
+org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('\' (code 92)): was expecting double-quote to start property name
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.readJavaType(AbstractJacksonHttpMessageConverter.java:363)
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.read(AbstractJacksonHttpMessageConverter.java:319)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:203)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:181)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:156)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:174)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at com.alibaba.druid.support.jakarta.WebStatFilter.doFilter(WebStatFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at com.ruoyi.common.filter.RepeatableFilter.doFilter(RepeatableFilter.java:43)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:235)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:371)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:132)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:86)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at com.ruoyi.framework.security.filter.JwtAuthenticationTokenFilter.doFilterInternal(JwtAuthenticationTokenFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: tools.jackson.core.exc.StreamReadException: Unexpected character ('\' (code 92)): was expecting double-quote to start property name
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); byte offset: #1]
+	at tools.jackson.core.JsonParser._constructReadException(JsonParser.java:1800)
+	at tools.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:1049)
+	at tools.jackson.core.json.UTF8StreamJsonParser._handleOddName(UTF8StreamJsonParser.java:2459)
+	at tools.jackson.core.json.UTF8StreamJsonParser._parseName(UTF8StreamJsonParser.java:2110)
+	at tools.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:747)
+	at tools.jackson.databind.deser.bean.BeanDeserializer.deserialize(BeanDeserializer.java:196)
+	at tools.jackson.databind.deser.DeserializationContextExt.readRootValue(DeserializationContextExt.java:265)
+	at tools.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:1646)
+	at tools.jackson.databind.ObjectReader.readValue(ObjectReader.java:1171)
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.readJavaType(AbstractJacksonHttpMessageConverter.java:352)
+	... 105 common frames omitted
+19:37:18.660 [http-nio-8080-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [logException,248] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('\' (code 92)): was expecting double-quote to start property name]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  11:01 min
+[INFO] Finished at: 2026-05-26T19:37:39+08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:4.0.3:run (default-cli) on project ruoyi-admin: Process terminated with exit code: 1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

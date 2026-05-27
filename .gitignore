@@ -1,0 +1,16 @@
+# 日志文件
+*.log
+logs/
+
+# 临时脚本
+*.bat
+*.sh
+
+# IDE配置文件
+.vscode/
+.idea/
+
+# 构建产物
+target/
+dist/
+node_modules/

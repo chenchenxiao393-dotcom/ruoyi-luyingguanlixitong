@@ -1,0 +1,68 @@
+Application Version: 3.9.2
+Spring Boot Version: 4.0.3
+////////////////////////////////////////////////////////////////////
+//                          _ooOoo_                               //
+//                         o8888888o                              //
+//                         88" . "88                              //
+//                         (| ^_^ |)                              //
+//                         O\  =  /O                              //
+//                      ____/`---'\____                           //
+//                    .'  \\|     |//  `.                         //
+//                   /  \\|||  :  |||//  \                        //
+//                  /  _||||| -:- |||||-  \                       //
+//                  |   | \\\  -  /// |   |                       //
+//                  | \_|  ''\---/''  |   |                       //
+//                  \  .-\__  `-`  ___/-. /                       //
+//                ___`. .'  /--.--\  `. . ___                     //
+//              ."" '<  `.___\_<|>_/___.'  >'"".                  //
+//            | | :  `- \`.;`\ _ /`;.`/ - ` : | |                 //
+//            \  \ `-.   \_ __\ /__ _/   .-` /  /                 //
+//      ========`-.____`-.___\_____/___.-`____.-'========         //
+//                           `=---='                              //
+//      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        //
+//             佛祖保佑       永不宕机      永无BUG               //
+////////////////////////////////////////////////////////////////////
+15:39:35.379 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,18] - HV000001: Hibernate Validator 9.0.1.Final
+15:39:35.439 [main] INFO  c.r.RuoYiApplication - [logStarting,54] - Starting RuoYiApplication using Java 17.0.12 with PID 1400 (E:\VS code项目\RuoYi-Vue-master\ruoyi-admin\target\ruoyi-admin.jar started by chen in E:\VS code项目\RuoYi-Vue-master)
+15:39:35.441 [main] DEBUG c.r.RuoYiApplication - [logStarting,55] - Running with Spring Boot v4.0.3, Spring v7.0.5
+15:39:35.442 [main] INFO  c.r.RuoYiApplication - [logStartupProfileInfo,658] - The following 1 profile is active: "druid"
+15:39:38.283 [main] INFO  o.a.c.h.Http11NioProtocol - [log,168] - Initializing ProtocolHandler ["http-nio-8080"]
+15:39:38.289 [main] INFO  o.a.c.c.StandardService - [log,168] - Starting service [Tomcat]
+15:39:38.289 [main] INFO  o.a.c.c.StandardEngine - [log,168] - Starting Servlet engine: [Apache Tomcat/11.0.18]
+15:39:39.402 [main] DEBUG c.r.f.s.f.JwtAuthenticationTokenFilter - [init,236] - Filter 'jwtAuthenticationTokenFilter' configured for use
+15:39:40.232 [main] INFO  c.a.d.p.DruidDataSource - [init,865] - {dataSource-1} inited
+15:39:41.234 [main] DEBUG c.r.s.m.S.selectConfigList - [debug,135] - ==>  Preparing: select config_id, config_name, config_key, config_value, config_type, create_by, create_time, update_by, update_time, remark from sys_config
+15:39:41.505 [main] DEBUG c.r.s.m.S.selectConfigList - [debug,135] - ==> Parameters: 
+15:39:41.583 [main] DEBUG c.r.s.m.S.selectConfigList - [debug,135] - <==      Total: 9
+15:39:42.400 [main] DEBUG c.r.s.m.S.selectDictDataList - [debug,135] - ==>  Preparing: select dict_code, dict_sort, dict_label, dict_value, dict_type, css_class, list_class, is_default, status, create_by, create_time, remark from sys_dict_data WHERE status = ? order by dict_sort asc
+15:39:42.431 [main] DEBUG c.r.s.m.S.selectDictDataList - [debug,135] - ==> Parameters: 0(String)
+15:39:42.447 [main] DEBUG c.r.s.m.S.selectDictDataList - [debug,135] - <==      Total: 29
+15:39:43.476 [main] INFO  o.q.c.SchedulerSignalerImpl - [<init>,62] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+15:39:43.478 [main] INFO  o.q.c.QuartzScheduler - [<init>,224] - Quartz Scheduler v2.5.2 created.
+15:39:43.479 [main] INFO  o.q.s.RAMJobStore - [initialize,152] - RAMJobStore initialized.
+15:39:43.481 [main] INFO  o.q.c.QuartzScheduler - [initialize,289] - Scheduler meta-data: Quartz Scheduler (v2.5.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+15:39:43.481 [main] INFO  o.q.c.QuartzScheduler - [setJobFactory,2250] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@6a8d638
+15:39:43.492 [main] DEBUG c.r.q.m.S.selectJobAll - [debug,135] - ==>  Preparing: select job_id, job_name, job_group, invoke_target, cron_expression, misfire_policy, concurrent, status, create_by, create_time, update_by, update_time, remark from sys_job
+15:39:43.493 [main] DEBUG c.r.q.m.S.selectJobAll - [debug,135] - ==> Parameters: 
+15:39:43.496 [main] DEBUG c.r.q.m.S.selectJobAll - [debug,135] - <==      Total: 3
+15:39:44.541 [main] INFO  o.a.c.h.Http11NioProtocol - [log,168] - Starting ProtocolHandler ["http-nio-8080"]
+15:39:44.573 [main] INFO  o.q.c.QuartzScheduler - [start,541] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+15:39:44.583 [main] INFO  c.r.RuoYiApplication - [logStarted,60] - Started RuoYiApplication in 9.56 seconds (process running for 10.314)
+15:39:44.588 [main] WARN  o.s.c.e.SpringDocAppInitializer - [init,83] - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+(????)??  若依启动成功   ?(??`?)?  
+ .-------.       ____     __        
+ |  _ _   \      \   \   /  /    
+ | ( ' )  |       \  _. /  '       
+ |(_ o _) /        _( )_ .'         
+ | (_,_).' __  ___(_ o _)'          
+ |  |\ \  |  ||   |(_,_)'         
+ |  | \ `'   /|   `-'  /           
+ |  |  \    /  \      /           
+ ''-'   `'-'    `-..-'              
